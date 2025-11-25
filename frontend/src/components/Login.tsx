@@ -31,7 +31,7 @@ export default function Login() {
             <h1 className="text-[#1e3a5f] text-xl font-bold tracking-wide">RENTMOTE</h1>
             <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Iniciar Sesión</h2>
             <p className="text-gray-600 text-sm leading-relaxed">Bienvenido Rentmote, por favor ingrese a su cuenta</p>
-            {error && <p className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">{error}</p>}
+
             <div className="w-full text-left space-y-2">
               <label htmlFor="email" className="block text-gray-700 text-sm font-medium">
                 Email *
@@ -58,6 +58,7 @@ export default function Login() {
                 required
               />
             </div>
+            {error && <p className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">{error}</p>}
             <button type="submit" className="w-full sm:w-auto sm:min-w-[200px] h-12 bg-[#238845] hover:bg-[#22c55e] text-white font-semibold rounded-full shadow-sm transition-all duration-200 uppercase tracking-wide">Entrar</button>
             <div className="text-center pt-2">
               <a

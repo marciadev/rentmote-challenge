@@ -12,17 +12,17 @@ const port = process.env.PORT || 4000;
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-app.get("/", (_req, res) => {
+app.get("/", (_, res) => {
   res.json({ status: "OK", message: "Auth API running" });
 });
 
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 
-app.use((req, res) => {
+app.use((_, res) => {
   res.status(404).json({ message: "Ruta no encontrada" });
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on ${port}`);
 });

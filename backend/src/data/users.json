@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Lucía",
+    "apellido": "López",
+    "edad": 28,
+    "email": "lucia@example.com",
+    "password": "password123"
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "edad": 32,
+    "email": "juan@example.com",
+    "password": "password123"
+  },
+  {
+    "nombre": "María",
+    "apellido": "González",
+    "edad": 25,
+    "email": "maria@example.com",
+    "password": "password123"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Gimenez",
+    "edad": 40,
+    "email": "pedro@example.com",
+    "password": "password123"
+  }
+]
